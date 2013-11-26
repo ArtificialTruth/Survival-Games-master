@@ -571,7 +571,7 @@ public class Game {
 							Player killer = p.getKiller();
 							if (SurvivalGames.econOn && SurvivalGames.econPoints.containsKey("kill")){
 								SurvivalGames.econ.depositPlayer(killer.getName(), SurvivalGames.econPoints.get("kill"));
-								msgmgr.sendMessage(PrefixType.INFO, SurvivalGames.econPoints.get("kill") + " has been added yo your funds for killing " + p.getName() + ".", killer);
+								msgmgr.sendMessage(PrefixType.INFO, SurvivalGames.econPoints.get("kill") + " IGM has been given to you for killing " + p.getName() + ".", killer);
 							}
 							msgFall(PrefixType.INFO, "death."+p.getLastDamageCause().getEntityType(),
 									"player-"+(SurvivalGames.auth.contains(p.getName()) ? ChatColor.DARK_RED + "" + ChatColor.BOLD : "") + p.getName(),
