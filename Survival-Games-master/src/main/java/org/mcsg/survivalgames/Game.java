@@ -371,7 +371,7 @@ public class Game {
 				return;
 			}
 			SurvivalGames.econ.withdrawPlayer(pl.getName(), SurvivalGames.econPoints.get("vote"));
-			msgmgr.sendMessage(PrefixType.INFO, SurvivalGames.econPoints.get("vote") + " have been withdrawn from your funds.", pl);
+			msgmgr.sendMessage(PrefixType.INFO, SurvivalGames.econPoints.get("vote") + " have been withdrawn from your balance.", pl);
 		}
 		vote++;
 		voted.add(pl);
@@ -672,7 +672,7 @@ public class Game {
 		win.setFallDistance(0);
 		         if (SurvivalGames.econOn && SurvivalGames.econPoints.containsKey("win")){
 		             SurvivalGames.econ.depositPlayer(win.getName(), SurvivalGames.econPoints.get("win"));
-		             msgmgr.sendMessage(PrefixType.INFO, SurvivalGames.econPoints.get("win") + " has been added to your funds for winning the game.", win);
+		             msgmgr.sendMessage(PrefixType.INFO, SurvivalGames.econPoints.get("win") + " has been added to your balance for winning the game.", win);
 		         }
 
 		sm.playerWin(win, gameID, new Date().getTime() - startTime);
